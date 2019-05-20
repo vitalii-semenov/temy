@@ -1,0 +1,36 @@
+#form_registration {
+    padding-bottom: 20px;
+    background-color: rgba(173, 216, 230, 0.479);
+}
+.row {
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 5px;
+}
+.users-field {
+    border-left: 1px solid rgba(0, 0, 0, 0.233);
+    background-color: rgba(173, 216, 230, 0.479);
+}
+.req_field {
+    color: red;
+}
+
+input:focus:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+.form-state {
+    display: none;
+}
+
+.form-city {
+    display: none;
+}
+td {
+    padding: 10px;
+}
+.wrapper {
+    display: block;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 5px;
+    background-color: rgba(5, 7, 100, 0.027);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <title>Temy Test Environment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form id="form_registration" action="" class="col-12 col-md-4 regist" method="POST">
+                <h2>Registration form:</h2>
+                <div class="form-group">
+                    <label for="Name-input">Name (6 letters min): <span class="req_field">*</span></label>
+                    <input type="text" id="user_name" class="form-control" required pattern="^[A-Za-z]{6,}" placeholder="Insert Name">
+                </div>
+                <div class="form-group">
+                    <label for="Email-input">Email: <span class="req_field">*</span></label>
+                    <input type="email" id="email" class="form-control" required placeholder="Insert Email">
+                </div>
+                <div class="form-group">
+                    <label for="Country-input">Country: <span class="req_field">*</span></label>
+                    <select value="" name="country" id="country_id" class="form-control" required></select>
+                </div>
+                <div class="form-group form-state">
+                    <label for="State-input">State: <span class="req_field">*</span></label>
+                    <select name="country" id="state_id" class="form-control" required></select>
+                </div>
+                <div class="form-group form-city">
+                    <label for="City-input">City: <span class="req_field">*</span></label>
+                    <select name="country" id="city_id" class="form-control" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="Phone_number-input">Phone number: <span class="req_field">*</span></label>
+                    <input type="tel" 
+                        id="phone_number" 
+                        class="form-control" 
+                        pattern="^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$"
+                        placeholder="xxx xxx xxxx"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="Address-input">Address:</label>
+                    <input type="text" id="address" class="form-control" placeholder="Insert Address">
+                </div>
+                <div class="form-group">
+                    <label for="About-input">About:</label>
+                    <textarea maxlength="500" rows="5" id="about_me" class="form-control"></textarea>
+                </div>
+
+                <button id="btn_registr" type="button" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="col-12 col-md-8 users-field">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
